@@ -1,6 +1,6 @@
 /* this is some magical font-importing.  
 you'll learn about it later. */
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap");
 
 body {
   margin: 0;
@@ -9,24 +9,39 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-container,
+.right-container {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
 }
 
 .profile-image {
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  margin: 1.2vh 0.9vw;
 }
 
 .logo {
   color: rebeccapurple;
-  font-size: 32px;
+  align-content: center;
   font-weight: 900;
   font-style: italic;
+  padding-left: 12px;
 }
 
 button {
@@ -34,7 +49,10 @@ button {
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
-  padding: 8px 24px;
+  padding: 0px 8px;
+  margin-right: 1vw;
+  padding: 8px 40px;
+  font-weight: bold;
 }
 
 a {
